@@ -1,0 +1,29 @@
+{
+  "name": "clawcast",
+  "displayName": "Clawcast",
+  "description": "Turns what your Claude Code agents build into a daily two-host podcast. A SessionEnd + debounced Stop hook generate your episode locally and ship ONLY the finished script (never raw transcripts) to clawcast.fm.",
+  "version": "0.1.1",
+  "author": { "name": "Clawcast", "url": "https://clawcast.fm" },
+  "homepage": "https://clawcast.fm",
+  "keywords": ["podcast", "claude-code", "daily", "summary"],
+  "userConfig": {
+    "token": {
+      "type": "string",
+      "title": "Clawcast token",
+      "description": "Your ingest token from https://clawcast.fm (sign in → connect). Stored in your OS keychain.",
+      "sensitive": true
+    },
+    "api": {
+      "type": "string",
+      "title": "API base URL",
+      "description": "Leave default unless self-hosting Clawcast.",
+      "default": "https://clawcast.fm"
+    },
+    "engine": {
+      "type": "string",
+      "title": "Generation engine",
+      "description": "Which already-authenticated CLI writes your script: 'claude' or 'codex'. Sets the initial engine; change anytime at clawcast.fm/settings.",
+      "default": "claude"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "clawcast",
+  "description": "Clawcast — turn what your Claude Code agents build into a daily podcast.",
+  "owner": { "name": "Clawcast", "url": "https://clawcast.fm" },
+  "plugins": [
+    {
+      "name": "clawcast",
+      "source": "./",
+      "description": "Daily two-host podcast of what your agents built. SessionEnd + debounced Stop hooks generate the episode locally and ship only the script."
+    }
+  ]
+}
